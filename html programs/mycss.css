@@ -1,0 +1,47 @@
+body
+{
+	background-color: #c28f8f;
+	margin:0;
+	padding:0;
+}
+
+.left-nav
+{
+	
+	float:left;
+}
+
+
+.right-nav{
+	
+	float: right;
+}
+
+
+.right-nav li{
+	
+	display: inline-block;
+	margin:10px;
+}
+
+ul li{
+	
+	list-style-type: none;
+}
+
+header{
+	
+	background-color: #322a2a;
+	height:70px;
+}
+
+footer{
+	
+	clear:both;
+	
+    background-color: #322a2a;
+	margin-top: 70px;
+	text-align: center;
+	padding: 10px;
+	color:#fff;
+}

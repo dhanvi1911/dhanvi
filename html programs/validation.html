@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <script>
+   function validate(){
+       var username=document.getElementById("text1");
+       var pass1=document.getElementById("pass");
+       if(username.value.trim()=="")
+       {
+            //alert("no blank values allowed");
+            username.style.border="solid 3px red";
+            document.getElementById("lbluser").style.visibility="visible";
+            return false;
+       }
+       else if(pass1.value.trim()=="")
+       {
+        alert("no blank values allowed in password box");
+            return false; 
+       }
+       else if(pass1.value.trim().length<5)
+       {
+           alert("password is too short");
+           return false;
+       }
+       else{
+           return true;
+       }
+    }
+   </script>
+    <title>buttonbyid</title>
+</head>
+<body>
+    <form action="try.html" onsubmit="return validate()">
+    <input type="text" id="text1" placeholder="write something">
+    <label id="lbluser" style="color:crimson;visibility:hidden;">invalid</label><br>
+    <input type="password" id="pass">
+   
+    <button type="submit">submitme</button>
+</form>
+</body>
+</html>

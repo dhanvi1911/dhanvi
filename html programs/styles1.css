@@ -1,0 +1,26 @@
+.container{
+width:100%;
+margin:auto;
+padding-top: 4%;
+padding-right: 4%;
+}
+body{
+background-color: #FFC0CB;
+}
+p{
+font-style: Arial;
+}
+.row{
+width:100;
+display:flex;
+flex-wrap: wrap;
+}
+.col-1{
+width:60%;
+margin:0;
+float:left;
+}
+.col-2{
+width:30%;
+margin:0;
+}

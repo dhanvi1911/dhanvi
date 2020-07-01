@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>document</title>
+<script>
+function buttonclick()
+{
+alert('hello');
+var v=document.getElementById("us").value;
+var m=document.getElementById("pass").value;
+var n=document.getElementById("r1");
+var o=document.getElementById("r2");
+if(n.checked==true)
+{
+alert("the button you have selected is"+n.value);
+}
+else if(o.checked==true)
+{
+alert("the button you have selected is"+o.value);
+}
+else
+{
+alert("no selection");
+}
+var sel=document.getElementById("f1");
+alert(sel.options[sel.selectedIndex].value);
+alert(v);
+alert(m);
+}
+var para=document.getElementByTagName("p");
+para[0].style.color="red";
+para[1].style.color="blue";
+para[2].style.color="green";
+</script>
+</head>
+<body>
+<button onclick="buttonclick()">clickme</button>
+<h1 id="abc">Some Changes Are Needed</h1>
+<input type="text" id="us" placeholder="write the name">
+<input type="password" id="pass" placeholder="write the password">
+<input type="radio" value="male" name="grp1" id="r1">male</input>
+<input type="radio" value="female" name="grp1" id="r2">female</input>
+<select name="fruit" id="f1">
+<option> mango</option>
+<option>apple</option>
+<option>pineapple</option>
+<form>
+<p>hfdj sbfhdgj</p>
+<p>sjgfuegfug dhbha</p>
+<p>vdsgvfgvs</p>
+</form>
+</select>
+</body>
+</html>

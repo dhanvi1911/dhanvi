@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>document</title>
+<script>
+function buttonclick()
+{
+alert('hello');
+}
+</script>
+</head>
+<body>
+<button onclick="buttonclick()">clickme</button>
+</body>
+</html>
